@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0;
+    gap: 10px;
+}
+
+.bookList__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around; 
+}
+
+.description__container {
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.loading {
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+
+}

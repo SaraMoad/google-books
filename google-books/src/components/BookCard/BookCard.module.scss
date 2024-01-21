@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 22%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.title {
+    font-size: 16px;
+}
+
+.image__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-right: 10px;
+    width: 40%;
+    // background-color: white;
+    height: 100%
+}
+
+img {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(76, 93, 90, .5);
+    height: 100%;
+    width: 100%;
+    // object-fit: cover;
+}
+
+.book__information__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.description {
+    margin: 0;
+    text-overflow: ellipsis;
+}
