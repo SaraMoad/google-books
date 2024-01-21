@@ -8,8 +8,6 @@ import "./app.css"
 function App() {
 
   return (
-    <div>
-      {/* <Layout> */}
         <SearchTermContextProvider>
           <BookListContextProvider>
             <Header />
@@ -17,8 +15,6 @@ function App() {
             <Home />
           </BookListContextProvider>
         </SearchTermContextProvider>
-        {/* </Layout> */}
-    </div>
   )
 }
 

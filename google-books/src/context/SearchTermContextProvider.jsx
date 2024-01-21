@@ -7,7 +7,7 @@ const SearchTermContextProvider = ({ children }) => {
     const [searchTermContext, setSearchTermContext] = useState("")
     return (
         <SearchContext.Provider value={{ searchTermContext, setSearchTermContext }}>{children}</SearchContext.Provider>
-    )
+    );
 }
 
 export default SearchTermContextProvider

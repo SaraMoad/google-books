@@ -19,8 +19,6 @@
     align-items: start;
     justify-content: start;
     padding-right: 10px;
-    width: 40%;
-    // background-color: white;
     height: 100%
 }
 
@@ -30,7 +28,7 @@ img {
     box-shadow: 0 0 10px 5px rgba(76, 93, 90, .5);
     height: 100%;
     width: 100%;
-    // object-fit: cover;
+    object-fit: cover;
 }
 
 .book__information__container {

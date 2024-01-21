@@ -1,7 +1,4 @@
 import React, { useState, createContext, useEffect, useContext, } from 'react'
-import { SearchContext } from './SearchTermContextProvider';
-import { fetchBooks } from '../data/fetchBooks';
-
 
 export const BookContext = createContext(null)
 
@@ -34,7 +31,7 @@ const BookListContextProvider = ({ children }) => {
 
     return (
         <React.Fragment>
-        <BookContext.Provider value={providedContext}>{children}</BookContext.Provider>
+            <BookContext.Provider value={providedContext}>{children}</BookContext.Provider>
         </React.Fragment>
     )
 }
