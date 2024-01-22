@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import BookCard from '../../components/BookCard/BookCard'
 import { BookContext } from '../../context/BookListContextProvider.jsx'
 import styles from "./bookList.module.scss"

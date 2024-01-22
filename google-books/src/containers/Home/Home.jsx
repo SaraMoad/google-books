@@ -3,15 +3,13 @@ import Pagination from '../../components/Pagination/Pagination'
 import styles from "./Home.module.scss"
 import { useContext } from 'react'
 import { BookContext } from '../../context/BookListContextProvider'
+import Error from '../../components/Error/Error'
 
 const Home = () => {
-    const {error} = useContext(BookContext)
+    const { error } = useContext(BookContext)
      return (
         <main className={styles.container}> 
-             {error &&
-                 <div>
-                     <p>{error}</p>
-                </div>}
+            {error && <Error error={error} />}
             <BookList />
             <Pagination />
         </main>

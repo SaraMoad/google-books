@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { BookContext } from '../../context/BookListContextProvider'
 import Button from '../Button/Button'
 import styles from "./BookModal.module.scss"
@@ -31,7 +31,7 @@ const BookModal = () => {
                         </div>
                     </div>
                 </div>
-                }
+            }
         </>
     )
 }
