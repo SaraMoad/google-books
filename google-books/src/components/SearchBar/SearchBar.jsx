@@ -11,21 +11,20 @@ const SearchBar = () => {
     const {setSearchTermContext } = useContext(SearchContext)
 
     const onFormSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault();        
         const inputValue = inputRef.current.value;
         setError(null)
         if (inputValue.trim() === "") {
             return setError("invalid search input.")
         }
         setLoading(true)
-        setSearchTermContext(inputValue)
         setCurrentPageNumber(0)
         fetchBooks(inputValue)
             .then((res) => { 
                 setBookList(res.dataToRender); setTotalPageNumbers(Math.floor(Number(res.results.totalResults) / 20))
             })
             .catch((e) => {setError(e.message); setBookList([]); setTotalPageNumbers(0)})
-            .finally(() => { setCurrentPageNumber(0), setLoading(false)})
+            .finally(() => { setCurrentPageNumber(0); setLoading(false); setSearchTermContext(inputValue); })
     }
     
 
