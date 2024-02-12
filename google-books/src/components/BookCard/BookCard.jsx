@@ -1,7 +1,6 @@
-import React from 'react'
-// -   Each book in the grid should have an image, author, title and description
 import styles from "./BookCard.module.scss"
 import imageNotFound from "../../images/Image_not_found.png"; 
+
 const BookCard = ({ handleClick, image, title, authors, description }) => {
     return (
         <div className={styles.container} onClick={handleClick}>
@@ -15,7 +14,6 @@ const BookCard = ({ handleClick, image, title, authors, description }) => {
                 }
                 {description && <p className={styles.description}>{description}</p>}
             </div>
-       
         </div>
     )
 }

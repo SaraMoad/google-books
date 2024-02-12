@@ -36,12 +36,15 @@ img {
     flex-direction: column;
     height: 100%;
     margin: 0;
+    text-overflow: ellipsis;
     overflow: hidden;
     justify-content: flex-start;
     width: 80%;
 }
 
 .description {
+    display: flex;
     margin: 0;
+    flex-wrap: nowrap;
     text-overflow: ellipsis;
 }

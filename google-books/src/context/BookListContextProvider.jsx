@@ -1,4 +1,4 @@
-import React, { useState, createContext, useEffect, useContext, } from 'react'
+import React, { useState, createContext } from 'react'
 
 export const BookContext = createContext(null)
 
@@ -30,9 +30,9 @@ const BookListContextProvider = ({ children }) => {
     }
 
     return (
-        <React.Fragment>
+        <>
             <BookContext.Provider value={providedContext}>{children}</BookContext.Provider>
-        </React.Fragment>
+        </>
     )
 }
 

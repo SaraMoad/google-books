@@ -16,7 +16,7 @@ const Header = () => {
         <div className={containerClassList.join(" ")}>
             <div className={headingClassList.join(" ")}>
                 <h1>Google Books</h1>
-                <h4>A page using react that interacts with the Google Books Api</h4>
+                <h4>A page using React that interacts with the Google Books Api</h4>
             </div>
             <SearchBar />
         </div>
