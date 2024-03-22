@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import BookCard from '../../components/BookCard/BookCard'
+import BookCard from '../../components/BookCard/BookCard.jsx'
 import { BookContext } from '../../context/BookListContextProvider.jsx'
 import styles from "./bookList.module.scss"
 import { SearchContext } from '../../context/SearchTermContextProvider.jsx'
